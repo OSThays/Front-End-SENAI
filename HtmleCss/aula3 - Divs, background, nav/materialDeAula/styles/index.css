@@ -1,4 +1,33 @@
-body {
-    background-color: black;
-    color: white;
+body{
+    background-color: rgb(189, 84, 84);
+    color: rgb(37, 37, 37);
+}
+
+#banner{
+    width: 680px;
+    width: 80%;
+
+}
+
+#cabecalho{
+    background-color: rgba(16, 238, 72, 0.685);
+    /* espaçamento 1 valor = todos os lados */
+    /* espaçamento 2 valores = eixo Y (cima embaixo) eixo X (esquerda e direita) */
+    /* espaçamento 4 valor = cima, direita, embaixo, esqueda */
+    padding: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+#links{
+    background-color: rgb(90, 90, 207);
+}
+
+#artigo{
+    width: 80%;
+    background-color: rgb(223, 102, 102);
+    padding: 20%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto
+/* border-radius = arredondamento */
 }
