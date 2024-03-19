@@ -1,0 +1,74 @@
+@font-face {
+    font-family: akira;
+    src: url(../fonts/akira_expanded/Akira\ Expanded\ Demo.otf);
+}
+
+@keyframes mudaCor {
+    0%{
+        margin-left: 50px;
+        color: black;
+    }
+    50%{
+        margin-left: 100px;
+        color: red;
+    }
+    100%{
+        margin-left: 0px;
+        color: blue;
+    }
+}
+
+:root{
+    --corPrimaria : rgb(142, 230, 142);
+    --corSecundaria : rgb(255, 255, 255);
+    --preto : rgb(0, 0, 0);
+    --roxo  : rgb(243, 179, 232);
+    --fontePrimaria : akira ;
+    --fonteSecundaria : 'Roboto' ;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--fonteSecundaria);
+}
+/* display, justify e align para centralizar a caixa*/
+#page{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corPrimaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* overflow: efeito*/
+main{
+    width: 70%;
+    height: 80%;
+    background-color: var(--corSecundaria);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+#efeito , #formulario{
+    width: 50%;
+    height: 100%;
+}
+
+#efeito{
+    background-image: url(../images/41f967e7-0995-4314-a904-ad2021e2b1fc.jpg);
+    background-size: cover;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(2,159,223,0) 100%);
+}
+
+h3{
+    animation-name: mudaCor;
+    animation-duration: 10s;
+}

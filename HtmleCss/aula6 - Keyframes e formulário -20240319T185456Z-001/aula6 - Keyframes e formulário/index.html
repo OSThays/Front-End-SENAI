@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- personal links -->
+    <link rel="stylesheet" href="geral.Css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="page">
+        <main>
+            <div id="efeito">
+                <div id="banner"></div>
+            </div>
+            <div id="formulario">
+                <h3>CADASTRO</h3>
+                <!-- form method "get", vaza os dados por url -->
+                <form action="#" method="post">
+                    <!-- nome-->
+                    <label for="nomeDeUsuario">Digite o seu nome :</label>
+                    <!-- "required" campo obrigatório -->
+                    <input required type="text" id="nomeDeUsuario">
+                    <!-- email -->
+                    <label for="emailDoUsuario">Digite o seu email :</label>
+                    <input required type="email" id="emailDoUsuario">
+                    <!-- senha -->
+                    <label for="senhaUsuario">Digite a sua senha :</label>
+                    <input required type="password" id="senhaDoUsuario">
+                    <!-- data de nascimento-->
+                    <label for="dataNascimento">Infome a sua data de nascimento :</label>
+                    <input type="date" id="dataNascimento">
+                    <button type="submit">CADASTRO</button>
+                    <button type="reset">RESETAR</button>
+
+                    <!-- outros inputs -->
+                    <!-- input type="file"-->
+                    <!-- input type="ckeckbox" name="" id=""-->
+                    <!--input type="color" name="" id=""-->
+                    <!--input type="number" name="" id=""-->
+                    <!--input type="tel" name="" id=""-->
+                    <!--textarea name="" id="" -->
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
