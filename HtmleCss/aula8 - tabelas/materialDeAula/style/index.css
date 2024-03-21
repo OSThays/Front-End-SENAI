@@ -17,9 +17,6 @@ h1 {
     color: var(--branco);
 }
 
-h3 {
-    
-}
 header , footer {
     display: flex;
     justify-content: center;
@@ -34,23 +31,30 @@ header , footer {
 #tabelaExcel {
     width: 400px;
     margin: 30px;
-    border: 1px solid var(--pretoTonalizado);
     border-collapse: collapse;
 }
 
 th, td {
     padding: 5px;
     border: 1px solid var(--pretoTonalizado);
-    user-select: nome;
+    user-select: none;
 }
 
 th {
     background-color: var(--corPrimaria);
+    color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 td {
-    text-align: center;
     background-color: var(--brancoTonalizado);
+    color: var(--preto);
 }
 
 /* hover ação de passar o mouse*/
@@ -67,6 +71,9 @@ td:active {
 }
 
 input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     padding: 10px;
     border-radius: 10px;
@@ -79,4 +86,42 @@ input:focus {
     background-color: var(--brancoTonalizado);
     color: var(--preto);
     border-radius: 0px;
+}
+
+th:empty {
+    border: none;
+    border-collapse: collapse;
+    background-color: transparent;
+    cursor: auto;
+}
+
+#tabelaProdutos {
+    width: 600px;
+    margin: 30px;
+    border-collapse: collapse;
+}
+
+#apenasScroll {
+    width: 1px;
+    height: 1000px;
+}
+
+header {
+    position: fixed;
+    top: -1px;
+}
+
+thead {
+    position: sticky;
+    top: 58px;
+}
+
+footer {
+    position: fixed;
+    bottom: -1px;
+}
+
+main {
+    padding-top: 40px;
+
 }
