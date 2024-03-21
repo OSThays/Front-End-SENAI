@@ -12,6 +12,7 @@
 :root{
     --corPrimaria  : #1530df;
     --corSecundaria : #4f1cc4;
+    --pretoPersonalizado : rgb(5, 1, 14);
     --preto : #000000;
     --branco : rgb(255, 255, 255);
 }
@@ -70,9 +71,17 @@ main h3{
 }
 
 main{
-
+    width: 70%;
+    height: 80%;
+    background-color: var(--corSecundaria);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
 }
 
+
 #banner{
-    
+    background-color: var(--branco);
+    background-image: url(../images/tela\ de\ login\ codigos.jpg);
+    background-size: 500px;
 }

@@ -1,0 +1,82 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --corPrimaria : rgb(224, 151, 42);
+    --corSecundaria : rgb(1, 61, 1);
+    --branco : rgb(255, 255, 255);
+    --brancoTonalizado : rgb(248, 215, 172);
+    --preto : rgb(0, 0, 0);
+    --pretoTonalizado : rgb(22, 16, 4);
+    --selecionado  : rgb(4, 187, 4);
+}
+
+h1 {
+    color: var(--branco);
+}
+
+h3 {
+    
+}
+header , footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--corPrimaria);
+}
+/* width: % porcentagem da tela
+- width: px é o tamanho */
+
+#tabelaExcel {
+    width: 400px;
+    margin: 30px;
+    border: 1px solid var(--pretoTonalizado);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid var(--pretoTonalizado);
+    user-select: nome;
+}
+
+th {
+    background-color: var(--corPrimaria);
+}
+
+td {
+    text-align: center;
+    background-color: var(--brancoTonalizado);
+}
+
+/* hover ação de passar o mouse*/
+
+th:hover {
+    background-color: var(--corSecundaria);
+    cursor: cell;
+}
+
+td:active {
+    background-color: var(--selecionado);
+    color: var(--preto);
+    border: solid var(--corSecundaria) 1px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: var(--branco);
+}
+
+input:focus {
+    transition: 1s;
+    background-color: var(--brancoTonalizado);
+    color: var(--preto);
+    border-radius: 0px;
+}

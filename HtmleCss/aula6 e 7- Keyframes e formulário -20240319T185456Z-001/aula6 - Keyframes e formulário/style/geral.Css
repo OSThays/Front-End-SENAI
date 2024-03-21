@@ -5,20 +5,21 @@
 
 @keyframes mudaCor {
     0%{
-        color: var(--preto);
+        color: var(--corSecundaria);
     }
     50%{
-        color: rgb(6, 124, 12);
+        color: rgb(59, 20, 82);
     }
     100%{
-        color: rgb(199, 135, 52);
+        color: rgb(197, 33, 47);
     }
 }
 
 :root{
     --corPrimaria : rgb(30, 41, 30);
     --corSecundaria : rgb(255, 255, 255);
-    --preto : rgb(0, 0, 0);
+    --pretoPersonalizado: rgb(15, 15, 15);
+    --preto : rgb(22, 22, 22);
     --roxo  : rgb(243, 179, 232);
     --fontePrimaria : akira ;
     --fonteSecundaria : 'Roboto' ;
@@ -44,7 +45,7 @@
 main{
     width: 70%;
     height: 80%;
-    background-color: var(--corSecundaria);
+    background-color: var(--pretoPersonalizado);
     border-radius: 10px;
     display: flex;
     overflow: hidden;
@@ -56,14 +57,17 @@ main{
 }
 
 #efeito{
-    background-image: url(../images/41f967e7-0995-4314-a904-ad2021e2b1fc.jpg);
+    background-image: url(../images/tela\ de\ login\ codigos.jpg_);
     background-size: cover;
 }
 
 #banner{
     width: 100%;
     height: 100%;
-    
+    background-color: var(--pretoPersonalizado);
+    background-image: url(../images/tela\ de\ login\ codigos.jpg);
+    background-size: 500px;
+    background-size: cover;
 }
 
 h3{
@@ -91,6 +95,10 @@ input{
     gap:10px
 }
 
+label {
+    color: var(--corSecundaria);
+}
+
 button{
     width: 50%;
     padding: 10px;
@@ -101,11 +109,11 @@ button{
     text-align: center;
     align-items: left;
     gap: 50px;
-    color: green;
+    color: var(--pretoPersonalizado);
     cursor: pointer;
 }
 
 a{
-    color: #054774;
+    color: #fdfdfd;
     gap: 10px;
 }
