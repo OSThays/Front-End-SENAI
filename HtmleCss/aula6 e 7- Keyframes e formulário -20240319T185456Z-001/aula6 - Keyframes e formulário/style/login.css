@@ -12,7 +12,7 @@
 :root{
     --corPrimaria  : #1530df;
     --corSecundaria : #4f1cc4;
-    --pretoPersonalizado : rgb(5, 1, 14);
+    --pretoPersonalizado: rgb(19, 19, 19);
     --preto : #000000;
     --branco : rgb(255, 255, 255);
 }
